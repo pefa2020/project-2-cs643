@@ -15,5 +15,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /app
 
-# ENTRYPOINT so TA's extra argument becomes sys.argv[1]
+# ENTRYPOINT so the extra argument becomes sys.argv[1]
 ENTRYPOINT ["python3", "predict.py"]
